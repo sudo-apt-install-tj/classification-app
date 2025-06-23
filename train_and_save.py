@@ -9,7 +9,7 @@ import joblib
 
 # 1) Load and rename columns to match downstream code
 df = pd.read_csv("train_test_dataset.csv")
-df.drop(columns='S.No.')
+df.drop(columns='S.No.',inplace=True)
 df = df.rename(columns={
     'Temperature_K':    'temp',
     'Luminosity_Lo':    'lumins',
