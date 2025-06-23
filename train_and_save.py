@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestClassifier
 import joblib
 
 # 1) Load and rename columns to match downstream code
-df = pd.read_csv("D:/Star Classification Project/train_test_dataset.csv")
+df = pd.read_csv("train_test_dataset.csv")
 df = df.rename(columns={
     'Temperature_K':    'temp',
     'Luminosity_Lo':    'lumins',
