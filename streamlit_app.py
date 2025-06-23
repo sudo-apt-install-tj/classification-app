@@ -19,6 +19,7 @@ uploaded = st.sidebar.file_uploader(
 
 if uploaded:
     df = pd.read_csv(uploaded)
+    df.drop(columns='S.No.',inplace=True)
     st.write("#### Preview of your data", df.head())
 
     # — rename to match training —
