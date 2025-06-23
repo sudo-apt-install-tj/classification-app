@@ -65,7 +65,7 @@ if uploaded:
         "colour_code",
         "class_code"
     ]]
-    X_scaled = scaler.transform(X)
+    X_scaled = scaler.transform(X.to_numpy())
 
     # — predict —
     preds = model.predict(X_scaled)
